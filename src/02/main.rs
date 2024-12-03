@@ -3,7 +3,6 @@ use std::io::{self, BufRead};
 
 fn main() -> io::Result<()> {
     let levels = load_data("./data.txt")?;
-    // let levels = load_data("./example-pt2.txt")?;
 
     println!("Safe reports count: {}", count_safe_reports(&levels));
     println!("Safe reports count: {}", count_safe_reports_pt2(&levels));
